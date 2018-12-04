@@ -1,0 +1,28 @@
+html {
+	background-color: #aaa;
+	margin: 0;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	animation: rotate-page-in 0.5s steps(11);
+	background-color: white;
+	color: #222;
+	font-family: sans-serif;
+	margin: 0;
+	overflow: hidden;
+	padding: 1em;
+	transform-origin: center;
+}
+
+@keyframes rotate-page-in {
+	0% { outline: 3px solid; transform: rotate(180deg) scale(0) }
+	1% { outline: 3px solid; max-height: 100vh; transform: rotate(180deg) scale(0) }
+	100% { outline: 3px solid; max-height: 100vh; transform: rotate(0) scale(1) }
+}
